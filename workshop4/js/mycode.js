@@ -1,19 +1,16 @@
-$(document).ready(function(){
+$(document).ready(function () {
+  var scroll = "uninitialized";
+  $("#navbar").hide();
 
-var scroll = "uninitialized";
-$("#navbar").hide();
+  $(window).scroll(function () {
+    scroll = $(window).scrollTop();
 
+    if (scroll > $("#section2").offset().top) {
+      $("#navbar").show();
+    }
 
-$(window).scroll(function(){
-
-     scroll = $(window).scrollTop();
-     
-     if (scroll > $("#section2").offset().top){
-         $("#navbar").show();
-     }
-     
-     if (scroll < $("#section2").offset().top){
-         $("#navbar").hide();
-     }     
-});
+    if (scroll < $("#section2").offset().top) {
+      $("#navbar").hide();
+    }
+  });
 });
