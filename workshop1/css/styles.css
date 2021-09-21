@@ -1,0 +1,53 @@
+@charset "UTF-8";
+
+body{
+	height: 100vh;
+	width: 100vw;
+	padding: 0;
+	margin: 0;
+	background-color: pink;
+}
+
+/*Das ist ein Kommentar*/
+
+h1{
+	color: deeppink;
+}
+
+h2{
+	color: blue;
+}
+
+h3{
+	color: yellow;
+}
+
+p{
+	color: seagreen;
+}
+
+section{
+	height: 100vh;
+	width: 100vw;	
+}
+
+#section1{
+	background-color: white;
+}
+
+#section2{
+	background-color: pink;
+}
+
+#section3{
+	background-color: black;
+}
+
+#section4{
+	background-color: white;
+}
+
+#section5{
+	background-color: black;
+}
+

@@ -1,0 +1,183 @@
+@charset "UTF-8";
+
+body{
+	height: 100vh;
+	width: 100vw;
+	padding: 0;
+	margin: 0;
+	background-color: pink;
+}
+
+
+/*Navbar*/
+
+#navbar{
+  background: black;
+  display: flex; 
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  font-size: 1.2rem; /*workshop 3*/ 
+  position: fixed;  
+  top: 0;
+  padding: 0 40px;
+}
+
+#logo{
+  height: 10vh;
+  width: auto;
+}
+
+#navbar__menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.navbar__links {
+  color: white; /*workshop 3 - introduce to hexadecimal color values #fff*/
+  display: inline-grid;
+  align-items: center;
+  justify-content: center;
+  width: 125px;
+  text-decoration: none; 
+  height: 80px;
+  transition: all 0.3s ease; /*workshop 3*/
+}
+
+.navbar__btn {
+  display: flex;
+  padding: 0 70px;
+  width: 180px;
+}
+
+.button { /*use default button. This code in workshop 3*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  padding: 10px 20px;
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  background: #833ab4;
+  background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4); /*workshop 3*/
+  background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4); /*workshop 3*/
+  color: #fff;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.navbar__links:hover {  /*workshop 3*/
+  color: #9518fc;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.highlight { /*workshop 5*/
+  border-bottom: 4px solid rgb(132, 0, 255);
+}
+
+/*Generell*/
+
+h1{
+	font-size: 7vh;
+	color: black;
+}
+
+
+a{
+	text-decoration: none;
+	color: pink;
+	cursor: help;
+}
+
+
+/*Sections*/
+
+section{
+	height: 100vh;
+	width: 100vw;	
+	display: flex;
+}
+
+/*Section1*/
+
+#section1{
+	background-color: white;
+	justify-content: center;
+	align-items: center;
+}
+
+
+
+/*Section2*/
+
+#section2{
+	background-color: pink;
+	justify-content: center;
+	align-items: center;
+}
+
+.innersection{
+	height: 50vh;
+	width: 50vw;
+}
+
+/*Section3*/
+
+#section3{
+	background-color: black;
+	justify-content: center;
+	align-items: center;
+}
+
+#section3 h1{
+	color: white;
+}
+
+#section3 p{
+	color: white;
+}
+
+/*Section4*/
+
+#section4{
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 60px;
+}
+
+/*Section5*/
+
+#section5{
+	background-color: black;
+}
+
+ /* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea, p {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: violet;
+  color: white;
+  padding: 12px 20px;
+  cursor: pointer;
+  height: 6%;
+  width: 40%;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+.button:hover {
+  background-color: #45a049;
+}
+
