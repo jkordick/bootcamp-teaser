@@ -9,19 +9,34 @@
             background-color: darkcyan !important;
         }
 
-        h1 {
-            font-size: 40px;
+        /* inline > internal & external > default */
+        h1,
+        h2 {
+            font-family: Arial, Helvetica, sans-serif;
             color: white;
+            margin-bottom: 40px;
         }
 
-        .text-container {
+        h1 {
+            margin-left: 30px;
+            font-size: 40px;
+        }
+
+        div.text-container {
+            padding: 20px;
             color: white;
             background-color: blue;
+            border-style: solid;
+            border-bottom-width: 10px;
+            border-bottom-color: blueviolet;
+            border-radius: 20px;
         }
 
         #list-container {
+            width: 50%;
             color: white;
             background-color: darkgreen;
+            border-style: dashed;
         }
     </style>
 </head>
