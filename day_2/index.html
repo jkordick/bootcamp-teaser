@@ -1,0 +1,93 @@
+<!DOCTYPE html> <!-- represents the document type, helps browsers to display page correctly-->
+<html lang="en-US">
+
+<head>
+    <title>my first website</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body {
+            background-color: darkcyan !important;
+        }
+
+        h1 {
+            font-size: 40px;
+            color: white;
+        }
+
+        .text-container {
+            color: white;
+            background-color: blue;
+        }
+
+        #list-container {
+            color: white;
+            background-color: darkgreen;
+        }
+    </style>
+</head>
+
+<body style="background-color: aquamarine;">
+    <h1>the title of my first website as h1</h1>
+    <h2>the subtitle of my first website as h2</h2>
+    <div class="text-container">
+        <p style="color: darkcyan; font-size: 20px; background-color: white;">some random text in a paragaph</p>
+        <p><b>bold text in another paragraph</b></p>
+        <p><i>and italic</i></p>
+        <pre>
+        formatted
+        text
+        in
+        a
+        pre
+    </pre>
+    </div>
+    <p title="i am a tooltip">more random text in another paragraph</p>
+    <a href="https://www.w3schools.com/html/html_intro.asp" target="_blank">link to w3schools in an a-tag</a>
+    <br>
+    <a href="https://de.wikipedia.org/wiki/Pinguine">
+        <img src="images/penguin.png" alt="awesome penguin">
+    </a>
+    <img src="images/penguin.gif" alt="running penguin baby">
+    <br>
+    <button onclick="alert('altert')">click me!</button>
+    <br><br>
+    <table>
+        <tr>
+            <th>forename</th>
+            <th>surname</th>
+            <th>city</th>
+        </tr>
+        <tr>
+            <td>julia</td>
+            <td>kordick</td>
+            <td>hannover</td>
+        </tr>
+    </table>
+
+    <div id="list-container">
+        <h4>programming languages I want to learn:</h4>
+        <ul>
+            <li>javascript</li>
+            <li>python</li>
+            <li>kotlin</li>
+        </ul>
+
+        <h4>favorite food</h4>
+        <ol>
+            <li>pasta</li>
+            <li>sushi</li>
+            <li>chips</li>
+        </ol>
+    </div>
+
+    <div>
+        <!-- block; container for elements -->
+    </div>
+
+    <span>
+        <!-- inline; used to mark up parts of texts -->
+    </span>
+
+</body>
+
+</html>
