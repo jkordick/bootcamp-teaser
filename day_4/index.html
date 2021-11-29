@@ -1,0 +1,119 @@
+<!DOCTYPE html> <!-- represents the document type, helps browsers to display page correctly-->
+<html lang="en-US">
+
+<head>
+    <title>day 4 - my first website</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="javascript-demo"></div>
+    <div id="math-demo"></div>
+    <br><br>
+    <button type="button" onclick="buttonFunction()">click me!</button>
+    <h1>day 4 - the title of my first website as h1</h1>
+    <h2>the subtitle of my first website as h2</h2>
+    <div class="text-container">
+        <p class="white-bg">some random text in a paragaph</p>
+        <p><b>bold text in another paragraph</b></p>
+        <p><i>and italic</i></p>
+        <pre>
+        formatted
+        text
+        in
+        a
+        pre
+    </pre>
+    </div>
+    <p title="i am a tooltip">more random text in another paragraph</p>
+    <a href="https://www.w3schools.com/html/html_intro.asp" target="_blank">link to w3schools in an a-tag</a>
+    <br>
+    <a href="https://de.wikipedia.org/wiki/Pinguine">
+        <img src="images/penguin.png" alt="awesome penguin">
+    </a>
+    <img src="images/penguin.gif" alt="running penguin baby">
+    <br><br>
+    <table>
+        <tr>
+            <th>forename</th>
+            <th>surname</th>
+            <th>city</th>
+        </tr>
+        <tr>
+            <td>julia</td>
+            <td>kordick</td>
+            <td>hannover</td>
+        </tr>
+    </table>
+
+    <div id="list-container">
+        <h4>programming languages I want to learn:</h4>
+        <ul>
+            <li>javascript</li>
+            <li>python</li>
+            <li>kotlin</li>
+        </ul>
+
+        <h4>favorite food</h4>
+        <ol>
+            <li>pasta</li>
+            <li>sushi</li>
+            <li>chips</li>
+        </ol>
+    </div>
+
+    <div>
+        <!-- block; container for elements -->
+    </div>
+
+    <span>
+        <!-- inline; used to mark up parts of texts -->
+    </span>
+
+</body>
+
+<script>
+
+    // identifier: start with $, A-Z or a-z, _
+
+    document.getElementById("math-demo").innerHTML = 2 * 4
+    document.getElementById("javascript-demo").innerHTML = "hello" + "world"
+    document.getElementById("javascript-demo").style.fontSize = "50px";
+    document.getElementById("list-container").style.display = "none";
+
+    function buttonFunction() {
+        let text = "hello javascript!"
+        document.getElementById("javascript-demo").innerHTML = text
+    }
+
+    document.getElementsByTagName("h1")[0].addEventListener('mouseover', (event) => {
+        if (document.getElementsByTagName("h1")[0].innerHTML === "day 4 - the title of my first website as h1") {
+            document.getElementsByTagName("h1")[0].innerHTML = "on mouseover headline"
+        } else {
+            document.getElementsByTagName("h1")[0].innerHTML = "day 4 - the title of my first website as h1"
+        }
+    })
+
+    // if else else if switch
+    // console.log
+
+    /**
+    onchange, onclick, onmouseover, onmouseout, onkeydown, onload
+    */
+
+    function toKelvin(celsius) {
+        return celsius + 273.15;
+    }
+
+    function toCelsius(fahrenheit) {
+        return (5 / 9) * (fahrenheit - 32);
+    }
+
+    document.getElementById("demo").innerHTML = toKelvin(77);
+
+
+</script>
+
+<script type="text/javascript" src="js/script.js"></script>
+
+</html>
